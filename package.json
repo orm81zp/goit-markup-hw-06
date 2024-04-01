@@ -1,0 +1,23 @@
+{
+  "name": "goit-markup-hw-06",
+  "version": "1.0.0",
+  "description": "Home work 6",
+  "main": "src/index.js",
+  "scripts": {
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orm81zp/goit-markup-hw-06.git"
+  },
+  "keywords": ["html", "css"],
+  "author": "Roman Onishchenko <orm81zp@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orm81zp/goit-markup-hw-06/issues"
+  },
+  "homepage": "https://orm81zp.github.io/goit-markup-hw-06",
+  "devDependencies": {
+    "gh-pages": "6.1.1"
+  }
+}
