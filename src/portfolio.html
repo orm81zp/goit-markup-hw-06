@@ -17,7 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="./css//styles.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -48,6 +48,25 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -72,8 +91,12 @@
               <a href="#" class="portfolio-link">
                 <div class="card-header">
                   <img
+                    srcset="
+                      ./images/portfolio/app-portfolio-1.jpeg    1x,
+                      ./images/portfolio/app-portfolio-1@2x.jpeg 2x
+                    "
                     width="360"
-                    src="./images/app-portfolio-1.jpg"
+                    src="./images/portfolio/app-portfolio-1.jpeg"
                     alt="Banking App Interface Concept"
                   />
                   <div class="overlay">
@@ -98,8 +121,12 @@
               <a href="#" class="portfolio-link">
                 <div class="card-header">
                   <img
+                    srcset="
+                      ./images/portfolio/marketing-portfolio-3.jpeg    1x,
+                      ./images/portfolio/marketing-portfolio-3@2x.jpeg 2x
+                    "
                     width="360"
-                    src="./images/marketing-portfolio-3.jpg"
+                    src="./images/portfolio/marketing-portfolio-3.jpeg"
                     alt="Cashless Payment"
                   />
                   <div class="overlay">
@@ -122,8 +149,12 @@
               <a href="#" class="portfolio-link">
                 <div class="card-header">
                   <img
+                    srcset="
+                      ./images/portfolio/app-portfolio-2.jpeg    1x,
+                      ./images/portfolio/app-portfolio-2@2x.jpeg 2x
+                    "
                     width="360"
-                    src="./images/app-portfolio-2.jpg"
+                    src="./images/portfolio/app-portfolio-2.jpeg"
                     alt="Meditation App"
                   />
                   <div class="overlay">
@@ -146,8 +177,12 @@
               <a href="#" class="portfolio-link">
                 <div class="card-header">
                   <img
+                    srcset="
+                      ./images/portfolio/marketing-portfolio-2.jpeg    1x,
+                      ./images/portfolio/marketing-portfolio-2@2x.jpeg 2x
+                    "
                     width="360"
-                    src="./images/marketing-portfolio-2.jpg"
+                    src="./images/portfolio/marketing-portfolio-2.jpeg"
                     alt="Taxi Service"
                   />
                   <div class="overlay">
@@ -170,8 +205,12 @@
               <a href="#" class="portfolio-link">
                 <div class="card-header">
                   <img
+                    srcset="
+                      ./images/portfolio/design-portfolio-1.jpeg    1x,
+                      ./images/portfolio/design-portfolio-1@2x.jpeg 2x
+                    "
                     width="360"
-                    src="./images/design-portfolio-1.jpg"
+                    src="./images/portfolio/design-portfolio-1.jpeg"
                     alt="Screen Illustrations"
                   />
                   <div class="overlay">
@@ -194,8 +233,12 @@
               <a href="#" class="portfolio-link">
                 <div class="card-header">
                   <img
+                    srcset="
+                      ./images/portfolio/marketing-portfolio-1.jpeg    1x,
+                      ./images/portfolio/marketing-portfolio-1@2x.jpeg 2x
+                    "
                     width="360"
-                    src="./images/marketing-portfolio-1.jpg"
+                    src="./images/portfolio/marketing-portfolio-1.jpeg"
                     alt="Online Courses"
                   />
                   <div class="overlay">
@@ -218,8 +261,12 @@
               <a href="#" class="portfolio-link">
                 <div class="card-header">
                   <img
+                    srcset="
+                      ./images/portfolio/design-portfolio-2.jpeg    1x,
+                      ./images/portfolio/design-portfolio-2@2x.jpeg 2x
+                    "
                     width="360"
-                    src="./images/design-portfolio-2.jpg"
+                    src="./images/portfolio/design-portfolio-2.jpeg"
                     alt="Instagram Stories Concept"
                   />
                   <div class="overlay">
@@ -242,8 +289,12 @@
               <a href="#" class="portfolio-link">
                 <div class="card-header">
                   <img
+                    srcset="
+                      ./images/portfolio/web-site-portfolio-1.jpeg    1x,
+                      ./images/portfolio/web-site-portfolio-1@2x.jpeg 2x
+                    "
                     width="360"
-                    src="./images/web-site-portfolio-1.jpg"
+                    src="./images/portfolio/web-site-portfolio-1.jpeg"
                     alt="Organic Food"
                   />
                   <div class="overlay">
@@ -266,8 +317,12 @@
               <a href="#" class="portfolio-link">
                 <div class="card-header">
                   <img
+                    srcset="
+                      ./images/portfolio/web-site-portfolio-2.jpeg    1x,
+                      ./images/portfolio/web-site-portfolio-2@2x.jpeg 2x
+                    "
                     width="360"
-                    src="./images/web-site-portfolio-2.jpg"
+                    src="./images/portfolio/web-site-portfolio-2.jpeg"
                     alt="Fresh Coffee"
                   />
                   <div class="overlay">
@@ -326,7 +381,7 @@
             </a>
           </div>
         </div>
-        <div class="column">
+        <div class="column column-form">
           <p class="title">Subscribe</p>
           <form
             class="form subscribe-form"
@@ -349,5 +404,60 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="menu-links">
+        <button class="close-button js-close-menu">
+          <span class="icons icons-close"></span>
+        </button>
+        <nav>
+          <ul class="page-nav-list-mobile">
+            <li class="list-item">
+              <a href="./index.html" class="page-nav-link">Studio</a>
+            </li>
+            <li class="list-item current">
+              <a href="./portfolio.html" class="page-nav-link">Portfolio</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="page-nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <address>
+          <ul class="address-list-mobile">
+            <li class="list-item list-item-phone">
+              <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="list-item">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+        <div class="social-links">
+          <a href="#" class="social-link">
+            <svg class="icon">
+              <use href="./images/icons.svg#icon-instagram-2"></use>
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg class="icon">
+              <use href="./images/icons.svg#icon-twitter-2"></use>
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg class="icon">
+              <use href="./images/icons.svg#icon-facebook-2"></use>
+            </svg>
+          </a>
+          <a href="#" class="social-link">
+            <svg class="icon">
+              <use href="./images/icons.svg#icon-linkedin-2"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
